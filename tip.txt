@@ -15,3 +15,26 @@ https://py-son.tistory.com/2
 
 
 인벤터도 공짜인데 받아놓으면 안쓰니 비추(재학증명서필요)
+
+
+add...
+
+코딩도장에서 참고하면 좋은친구들
+
+38. 예외 처리 사용하기 (error 떠도 코드 진행가능하게 해줌)
+42. 데코레이터 사용하기 (@붙어서 함수위에 있는거)
+44, 45 모듈
+47.4 날짜/시간 모듈 활용하기 (time 함수에 대한 연장선, 함수에 딜레이줄 수 있음) 
+47.9 메타클래스 사용하기 (class 버전 lambda)
+47.10 asyncio (동기/비동기식으로 데이터처리 대한 설명, 슥 훑고 넘어가고 3.8이상버전에서는 
+
+asyncio 모듈 사용하려면 아래 모듈 복사한 후 밑에다가 할 것(runtime 에러 발생)
+
+import sys
+
+
+if __name__ == '__main__':
+  py_ver = int(f"{sys.version_info.major}{sys.version_info.minor}")
+  if py_ver > 37 and sys.platform.startswith('win'):
+  	asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
